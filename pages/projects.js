@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ContainerBlock from '../components/ContainerBlock';
+import Projects from '../components/Projects';
 
 const projects = () => {
   return (
-    <div>projects</div>
+    <ContainerBlock>
+      <Projects />
+    </ContainerBlock>
   )
 }
 

@@ -49,7 +49,7 @@ const userData = {
       },
     ],
     about: {
-      title:
+      title1:
         `I'm a software developer that loves the web and building solutions for the web. I started coding in 2019 and I realize the fun i experienced creating solutions on the web. It felt like a superpower :)`,
       title2: 
       `I believe software development is more than just the code, it is also the thoughts that comes before and after each line of code, this is what led me into technical writing. Making knowledge understandable to even the lowest-skilled person in tech is what makes a difference in the software industry. `,
