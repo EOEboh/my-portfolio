@@ -8,28 +8,28 @@ const userData = {
     address: "",
     projects: [
       {
-        title: "Tailwind Master Kit",
-        link: "https://tailwindmasterkit.com",
-        imgUrl: "/tmk.jpg",
+        title: "Travel Buddy",
+        link: "https://github.com/EOEboh/travel-buddy",
+        imgUrl: "/travelbuddy.png",
       },
       {
-        title: "PlaceholderTech",
-        link: "https://placeholdertech.in",
-        imgUrl: "/placeholdertech.png",
+        title: "Skype Clone",
+        link: "https://github.com/EOEboh/skype-clone",
+        imgUrl: "/skypeclone.png",
       },
       {
-        title: "Portfolio",
-        link: "https://manuarora.in",
-        imgUrl: "/portfolio.png",
+        title: "Crypto Lion",
+        link: "https://github.com/EOEboh/crypto-lion",
+        imgUrl: "/cryptolion.png",
       },
       {
-        title: "CovidRescue",
-        link: "https://covidrescue.co.in",
-        imgUrl: "/covidrescue.png",
+        title: "Modish-X",
+        link: "https://github.com/EOEboh/modish-x",
+        imgUrl: "/modishx.png",
       },
       {
         title: "Algochurn",
-        link: "https://algochurn.com",
+        link: "",
         imgUrl: "/algochurn.png",
       },
       {
