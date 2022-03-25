@@ -64,6 +64,7 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.projects.map((proj, i) => (
             <ProjectCard1
+              key={i}
               title={proj.title}
               link={proj.link}
               imgUrl={proj.imgUrl}
@@ -88,6 +89,7 @@ const Projects = () => {
 
           {data.user.publication.posts?.map((post, i) => (
             <ProjectCard2
+              key={i}
               title={post.title}
               link={`https://captain-eo.hashnode.dev/${post.slug}`}
               imgUrl={`${post.coverImage}`}
