@@ -60,7 +60,7 @@ const AboutMe = () => {
                 Open to Work
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I'm looking for a job currently. Kindly check out my {" "}
+                I&apos;m looking for a job currently. Kindly check out my {" "}
                 <a
                   href="/files/myCV1.pdf"
                   target="__blank"
