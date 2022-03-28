@@ -4,49 +4,71 @@ const userData = {
     designation: "Front-End Developer and Technical Writer",
     avatarUrl: "/me.jpg",
     email: "ecolejnr007@gmail.com",
-    phone: "",
     address: "",
-    projects: [
+    reactProjects: [
       {
         title: "Travel Buddy",
         link: "https://github.com/EOEboh/travel-buddy",
-        imgUrl: "/travelbuddy.png",
+        imgUrl: "/travelbuddy.gif",
       },
       {
         title: "Skype Clone",
         link: "https://github.com/EOEboh/skype-clone",
-        imgUrl: "/skypeclone.png",
+        imgUrl: "/skypeclone.gif",
       },
       {
         title: "Crypto Lion",
         link: "https://github.com/EOEboh/crypto-lion",
-        imgUrl: "/cryptolion.png",
+        imgUrl: "/cryptolion.gif",
       },
       {
         title: "Modish-X",
         link: "https://github.com/EOEboh/modish-x",
         imgUrl: "/modishx.png",
       },
+    ],
+    jsProjects: [
       {
-        title: "Algochurn",
-        link: "",
-        imgUrl: "/algochurn.png",
+        title: "Sketch Board",
+        link: "https://github.com/EOEboh/JS-Drawing-Board",
+        imgUrl: "/sketchboard.gif"
       },
       {
-        title: "Playground",
-        link: "https://play.placeholdertech.in",
-        imgUrl: "/playground.png",
+        title: "Memory Cards",
+        link: "https://github.com/EOEboh/JS-Memory-Card-Game",
+        imgUrl: "/memorycard.gif"
       },
       {
-        title: "Feedmeback",
-        link: "https://feedmeback.vercel.app",
-        imgUrl: "/feedmeback.png",
+        title: "Snake Game",
+        link: "https://github.com/EOEboh/JS-Snake-Game",
+        imgUrl: "/snakegame.gif"
+      }
+    ],
+    openSource: [
+      {
+        title: "#231",
+        link: "https://github.com/chatwoot/docs/pull/231",
       },
       {
-        title: "Devmedium",
-        link: "https://devmedium.vercel.app",
-        imgUrl: "/devmedium.png",
+        title: "#6259",
+        link: "https://github.com/osmlab/name-suggestion-index/pull/6259",
       },
+      {
+        title: "#6294",
+        link: "https://github.com/osmlab/name-suggestion-index/pull/6294",
+      },
+      {
+        title: "#6320",
+        link: "https://github.com/osmlab/name-suggestion-index/pull/6320",
+      },
+      {
+        title: "#6343",
+        link: "https://github.com/osmlab/name-suggestion-index/pull/6343",
+      },
+      {
+        title: "#1",
+        link: "https://github.com/dee-d-dev/E-Wallet-System-Design/pull/1",
+      }
     ],
     about: {
       title1:
@@ -58,46 +80,54 @@ const userData = {
     },
     experience: [
       {
-        title: "Software Developer",
-        company: "mroads",
-        year: "2021",
-        companyLink: "https://mroads.com",
-        desc: "Contributed to our flagship product - Panna - which is an AI powered candidate interviewing product.",
-      },
-      {
-        title: "Founder and Developer",
-        company: "TailwindMasterKit",
-        year: "2021",
-        companyLink: "https://tailwindmasterkit.com",
-        desc: "Developed a marketplace for tailwind web components (React, HTML and Angular) and templates.",
-      },
-      {
-        title: "Founder and Developer",
-        company: "Algochurn",
-        year: "2021",
+        title: "Technical Writer",
+        company: "100ms",
+        year: "2022",
         companyLink: "https://algochurn.com",
-        desc: "Your last moment revision friend right before a Tech coding interview. Practice problems and get hired at top Product based companies.",
+        desc: "Built a video/audio conferencing web applications using the 100ms SDKs, REST APIs, JavaScript and React. Developed technical how-to blogs on the usage of the 100ms SDKs as well as use cases."
       },
       {
-        title: "Internship",
-        company: "Intel Corporation",
-        year: "2019",
-        companyLink: "https://intel.com",
-        desc: "Developed pothole detection system with OpenCV and computer vision, detects potholes on roads and informs the driver.",
+        title: "Technical Writer",
+        company: "Aviyel",
+        year: "2022",
+        companyLink: "https://algochurn.com",
+        desc: "Created technical how-to documentations on integration and usage of two open source enterprise projects. Developed technical content around several open source projects operated on the Aviyel platform relating to JavaScript, React Next.js etc."
       },
       {
-        title: "Graduation",
-        company: "UPES, Dehradun.",
-        year: "2019",
-        companyLink: "https://upes.co.in",
-        desc: "Major in Computer Science and Engineering with a CGPA of 7.0. Nobody asks this but it's okay.",
+        title: "Mobile Web Specialist",
+        company: "Andela",
+        year: "2020",
+        companyLink: "https://tailwindmasterkit.com",
+        desc: "Developed a weather app, music album store utilizing core technologies like JavaScript, Angular and REST APIs. Earned a badge for excellent performance in the skill badge test.",
       },
       {
-        title: "High School",
-        company: "Delhi Public School, Jaipur.",
-        year: "2015",
-        companyLink: "https://upes.co.in",
-        desc: "Subjects being PCM - I barely survived with 93.6% marks aggregate. Flex fridays, fellas.",
+        title: "FrontEnd Developer",
+        company: "Hotels.ng",
+        year: "2020",
+        companyLink: "https://mroads.com",
+        desc: "Contributed to development of hotel websites, as well as version control management for workflow. Etecetera., ",
+      },
+    ],
+    education:[
+      {
+        major: "Software Engineering",
+        degree: "Diploma",
+        year: " 2022 - 2023",
+        school: " AltSchool Africa"    
+      },
+      {
+        major: "Industrial Chemistry",
+        degree: "Bachelor of Science",
+        year: " 2017 - 2020",
+        school: " University of Benin"
+        
+      },
+      {
+        major: "Engineering A'Levels",
+        degree: "Diploma",
+        year: " 2016 - 2017",
+        school: " University of Benin"
+        
       },
     ],
     resumeUrl:
@@ -109,5 +139,6 @@ const userData = {
       hashnode: "https://captain-eo.hashnode.dev/"
     },
   };
+
   
   export default userData;

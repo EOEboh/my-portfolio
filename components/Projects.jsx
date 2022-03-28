@@ -1,7 +1,9 @@
 import React from 'react';
 import userData from '../constants/data';
-import ProjectCard1 from './ProjectCard1';
-import ProjectCard2 from './ProjectCard2';
+import ProjectCard1 from './projects/ProjectCard1';
+import ProjectCard2 from './projects/ProjectCard2';
+import ProjectCard3 from './projects/ProjectCard3';
+import ProjectCard4 from './projects/ProjectCard4';
 
 import axios from 'axios';
 import { useQuery } from 'react-query';
@@ -62,11 +64,56 @@ const Projects = () => {
      </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-          {userData.projects.map((proj, i) => (
+          {userData.reactProjects.map((proj, i) => (
             <ProjectCard1
               title={proj.title}
               link={proj.link}
               imgUrl={proj.imgUrl}
+              number={`${i + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+      </section>
+
+      <section className='js-projects'> 
+      <div className="text-container max-w-6xl mx-auto pt-20">
+          <p
+            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 "
+            style={{ lineHeight: "3rem" }}
+          >
+            JavaScript Projects
+          </p>
+     </div>
+      <div className="bg-[#F1F1F1] dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+          {userData.jsProjects.map((proj, i) => (
+            <ProjectCard3
+              title={proj.title}
+              link={proj.link}
+              imgUrl={proj.imgUrl}
+              number={`${i + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+      </section>
+
+      <section className='opensource-projects'> 
+      <div className="text-container max-w-6xl mx-auto pt-20">
+          <p
+            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 "
+            style={{ lineHeight: "3rem" }}
+          >
+            Open Source Contributions
+          </p>
+     </div>
+      <div className="bg-[#F1F1F1] dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+          {userData.openSource.map((proj, i) => (
+            <ProjectCard4
+              title={proj.title}
+              link={proj.link}
               number={`${i + 1}`}
             />
           ))}

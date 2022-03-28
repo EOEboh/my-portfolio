@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ContainerBlock from '../components/ContainerBlock';
+import Experience from '../components/Experience';
 
 const experience = () => {
   return (
-    <div>experience</div>
+    <ContainerBlock title='My Experience'>
+      <Experience />
+    </ContainerBlock>
   )
 }
 
