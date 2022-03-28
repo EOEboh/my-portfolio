@@ -12,7 +12,7 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
 
   useEffect(()=> {
-    setMounted(true);
+    setMounted(true); 
   }, []);
 
   return (
@@ -34,10 +34,10 @@ const Navbar = () => {
       </div>
 
       <div className="space-x-8 hidden md:block">
-        <Link href="/about">
+        <Link href="/aboutme">
           <a
             className={`text-base  ${
-              router.asPath === "/about"
+              router.asPath === "/aboutme"
                 ? "text-gray-800 font-bold dark:text-gray-400"
                 : "text-gray-600 dark:text-gray-300 font-normal "
             }`}
@@ -199,6 +199,8 @@ const Navbar = () => {
         </button>
       </div>
     </div>
+
+    {/* mobile navbar */}
     <div className="space-x-8 block md:hidden mt-4">
       <Link href="/aboutme">
         <a className="text-base font-normal text-gray-600 dark:text-gray-300">
