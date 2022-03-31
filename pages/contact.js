@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import ContainerBlock from '../components/ContainerBlock';
+import Contact from '../components/Contact';
 
 const contact = () => {
   return (
-    <div>contact</div>
+    <ContainerBlock>
+      <Contact />
+    </ContainerBlock>
   )
 }
 
