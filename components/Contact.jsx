@@ -31,7 +31,7 @@ const Contact = () => {
             <div className="icons-container inline-flex flex-col my-20">
               
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
-              <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>             
+              <IconContext.Provider value={{ color: "white", className: "global-class-name" }}>             
                      <MdEmail />         
               </IconContext.Provider>
                 <p className="text-gray-50 font-light text-sm">
@@ -40,7 +40,7 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
-              <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>             
+              <IconContext.Provider value={{ color: "white", className: "global-class-name" }}>             
                      <BsTwitter />         
               </IconContext.Provider>
                 <p className="text-gray-50 font-light text-sm">

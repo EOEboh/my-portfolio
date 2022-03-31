@@ -67,7 +67,7 @@ const Form = () => {
 
   return (
       <>
-    <form className="form rounded-lg bg-white p-4 flex flex-col"
+    <form className="form rounded-lg bg-white p-4  flex flex-col"
     onSubmit={handleOnSubmit}>
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               {" "}
