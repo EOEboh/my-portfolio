@@ -150,7 +150,11 @@ const AboutMe = () => {
                 className="h-20 w-20 mx-4 my-4 rounded-3xl"
               />
               <img
-                src="git.png"
+                src="node.png"
+                className="h-20 w-20 mx-4 my-4 rounded-3xl"
+              />
+              <img
+                src="mongo.png"
                 className="h-20 w-20 mx-4 my-4 rounded-3xl"
               />
               <img
