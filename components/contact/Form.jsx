@@ -51,7 +51,7 @@ const Form = () => {
         setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
         axios({
           method: 'POST',
-          url: 'https://formspree.io/f/xknyvqjg',
+          url: 'https://formspree.io/f/xknyvqjg', // Formspree
           data: inputs,
         })
           .then((response) => {
@@ -80,6 +80,7 @@ const Form = () => {
               name="_replyto"
               required
               onChange={handleOnChange}
+              placeholder='John Smith'
               value={inputs.name}
             />
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
@@ -91,6 +92,7 @@ const Form = () => {
               type="email"
               name="_replyto"
               onChange={handleOnChange}
+              placeholder='example@gmail.com'
               required
               value={inputs.email}
             />
@@ -105,6 +107,7 @@ const Form = () => {
               id='message'
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name='message'
+              placeholder='Type details here'
               required
               onChange={handleOnChange}
               value={inputs.message}
@@ -116,9 +119,9 @@ const Form = () => {
             >
          {!status.submitting
             ? !status.submitted
-              ? 'Send Message😎'
+              ? 'Send Message 😎'
               : 'Message Sent 😊'
-            : 'Sending...😶'}
+            : 'Sending... 😶'}
             </button>
           </form>
              {status.info.error && (
