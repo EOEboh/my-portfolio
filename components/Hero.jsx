@@ -72,7 +72,7 @@ const Hero = () => {
     </div>
 
   <div className='grid place-items-center'>
-    <button class="bg-transparent border border-black hover:border-transparent hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-2">
+    <button className="bg-transparent border border-black hover:border-transparent hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-2">
     <a
                   href="/files/myCV1.pdf"
                   target="__blank"
@@ -83,7 +83,7 @@ const Hero = () => {
   <span>My Resume/CV</span>
   </a>
 </button>
-    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-4">
+    <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-4">
     <a
                   href="https://captain-eo.hashnode.dev/"
                   target="__blank"
