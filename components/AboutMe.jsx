@@ -1,26 +1,26 @@
 import React from 'react';
 import userData from '../constants/data';
 import { BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs';
-import { SiHashnode } from 'react-icons/si';
+
 
 const AboutMe = () => {
   return (
     
     <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 text-orange-500">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           About Me
         </h1>
       </div>
       <div className="text-container max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 "
+            className="leading-loose text-4xl md:text-3xl text-orange-500 font-bold  mx-4 "
             style={{ lineHeight: "3rem" }}
           >
             Software Development
           </p>
      </div>
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
+      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900 p-5">
         <div className="text-container max-w-6xl mx-auto pt-20">
           <p
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
@@ -33,14 +33,14 @@ const AboutMe = () => {
       </div>
       <div className="text-container max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 "
+            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 text-orange-500"
             style={{ lineHeight: "3rem" }}
           >
             Technical Writing
           </p>
      </div>
      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
-        <div className="text-container max-w-6xl mx-auto pt-20">
+        <div className="text-container max-w-6xl mx-auto pt-20 p-5">
           <p
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
@@ -53,10 +53,10 @@ const AboutMe = () => {
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
           {/* Social Buttons */}
-          <div className="inline-flex flex-col">
+          <div className="inline-flex flex-col p-5">
             
             <div className="mt-8">
-              <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
+              <h1 className="text-xl font-semibold text-gray-700 text-orange-500">
                 Open to Work
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
@@ -133,10 +133,10 @@ const AboutMe = () => {
           
      
           {/* Text area */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 md:col-span-2 p-5">
             
 
-            <h1 className="bg-transparent text-black text-4xl rounded-md px-2 py-1 inline-block font-bold dark:text-white">
+            <h1 className="bg-transparent text-black text-4xl rounded-md px-2 py-1 inline-block font-bold text-orange-500">
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8 ">

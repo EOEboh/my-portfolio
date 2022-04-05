@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from './RainbowHighlight';
+
 import { MdArticle, MdDownload } from 'react-icons/md';
 
 import userData from '../constants/data';
@@ -14,25 +15,25 @@ const Hero = () => {
     <>
     <div className="flex flex-row justify-center items-start overflow-hidden">
       
-      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
+      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20 p-5">
         <RoughNotationGroup show={true}>
           <RainbowHighlight color={colors[0]}>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-200 my-2">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-700 dark:text-gray-200 my-2">
               Web Developer
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={colors[1]}>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-200 my-2">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-700 dark:text-gray-200 my-2">
               Technical Writer
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={colors[2]}>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-200 my-2">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-700 dark:text-gray-200 my-2">
               Open Source Enthusiast
             </h1>
           </RainbowHighlight>
           <RainbowHighlight color={colors[3]}>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-700 dark:text-gray-200 my-2">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-700 dark:text-gray-200 my-2">
               Content Creator
             </h1>
           </RainbowHighlight>
@@ -71,8 +72,8 @@ const Hero = () => {
       </div>
     </div>
 
-  <div className='grid place-items-center'>
-    <button className="bg-gray-300 dark:text-gray-200 border hover:border-transparent hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-2">
+  <div className='grid gap-2 grid-cols-2 p-5'>
+    <button className="bg-gray-300 border hover:border-transparent hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center  md:text-5xl my-2">
     <a
                   href="/files/myCVEngineering.pdf"
                   target="__blank"
@@ -83,7 +84,7 @@ const Hero = () => {
   <span>Resume/CV</span>
   </a>
 </button>
-    <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-4">
+    <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center md:text-5xl my-4">
     <a
                   href="https://captain-eo.hashnode.dev/"
                   target="__blank"
@@ -94,6 +95,7 @@ const Hero = () => {
   </a>
 </button>
 </div>
+
     </>
   );
 }

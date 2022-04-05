@@ -47,7 +47,7 @@ const Projects = () => {
     
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left text-orange-500">
           My Projects
         </h1>
       </div>
@@ -56,13 +56,13 @@ const Projects = () => {
       <section className='react-projects'> 
       <div className="text-container max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 "
+            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 text-orange-500"
             style={{ lineHeight: "3rem" }}
           >
             React Projects
           </p>
      </div>
-      <div className="bg-[#F1F1F1] dark:bg-gray-900">
+      <div className="bg-[#F1F1F1] dark:bg-gray-900 p-5">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.reactProjects.map((proj, i) => (
             <ProjectCard1
@@ -80,13 +80,13 @@ const Projects = () => {
       <section className='js-projects'> 
       <div className="text-container max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 "
+            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 text-orange-500"
             style={{ lineHeight: "3rem" }}
           >
             JavaScript Projects
           </p>
      </div>
-      <div className="bg-[#F1F1F1] dark:bg-gray-900">
+      <div className="bg-[#F1F1F1] dark:bg-gray-900 p-5">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.jsProjects.map((proj, i) => (
             <ProjectCard3
@@ -104,13 +104,13 @@ const Projects = () => {
       <section className='opensource-projects'> 
       <div className="text-container max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 "
+            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 text-orange-500"
             style={{ lineHeight: "3rem" }}
           >
             Open Source Contributions
           </p>
      </div>
-      <div className="bg-[#F1F1F1] dark:bg-gray-900">
+      <div className="bg-[#F1F1F1] dark:bg-gray-900 p-5">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.openSource.map((proj, i) => (
             <ProjectCard4
@@ -127,13 +127,13 @@ const Projects = () => {
       <section className='writing-projects'> 
       <div className="text-container max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 "
+            className="leading-loose text-4xl md:text-3xl font-bold  mx-4 text-orange-500"
             style={{ lineHeight: "3rem" }}
           >
             Technical Writing Projects
           </p>
      </div>
-      <div className="bg-[#F1F1F1] dark:bg-gray-900">
+      <div className="bg-[#F1F1F1] dark:bg-gray-900 p-5">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
 
           {data.user.publication.posts?.map((post, i) => (

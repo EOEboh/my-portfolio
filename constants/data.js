@@ -72,7 +72,7 @@ const userData = {
     ],
     about: {
       title1:
-        `I'm a software developer that loves the web and building solutions for the web. I started coding in 2019 and I realize the fun i experienced creating solutions on the web. It felt like a superpower :)`,
+        `I'm a software developer that loves the web and building solutions for the web. I started coding in 2019 and I realize the fun I felt when creating solutions on the web. It felt like a superpower :)`,
       title2: 
       `I believe software development is more than just the code, it is also the thoughts that comes before and after each line of code, this is what led me into technical writing. Making knowledge understandable to even the lowest-skilled person in tech is what makes a difference in the software industry. `,
       currentProject: "Tailwind Master Kit",
@@ -80,11 +80,11 @@ const userData = {
     },
     experience: [
       {
-        title: "Technical Writer",
+        title: "React Developer & Technical Writer",
         company: "100ms",
         year: "2022",
         companyLink: "https://algochurn.com",
-        desc: "Built a video/audio conferencing web applications using the 100ms SDKs, REST APIs, JavaScript and React. Developed technical how-to blogs on the usage of the 100ms SDKs as well as use cases."
+        desc: "Built video/audio conferencing web applications using the 100ms SDKs, REST APIs, JavaScript and React. Developed technical how-to blogs on the usage of the 100ms SDKs as well as use cases."
       },
       {
         title: "Technical Writer",

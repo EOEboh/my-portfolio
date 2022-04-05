@@ -1,19 +1,22 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 import { useTheme } from 'next-themes';
+
+// react-icons
+import { IconContext } from "react-icons";
 import { BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs';
+import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { SiHashnode } from 'react-icons/si';
+
 import userData from '..//constants/data';
 
 const Navbar = () => {
   const router = useRouter();
-  const [ mounted, setMounted ] = useState(false);
+
   const { theme, setTheme } = useTheme();
 
-  useEffect(()=> {
-    setMounted(true); 
-  }, []);
+
 
   return (
     <div> <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
@@ -140,62 +143,62 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="space-x-4 flex flex-row items-center">     
+      <div className="space-x-4 flex flex-row items-center">  
+      
+      <IconContext.Provider
+            value={{color: '#00acee'}}>  
         <a
           href={userData.socialLinks.twitter}
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
           <BsTwitter/>
         </a>
+      </IconContext.Provider>
+
+      <IconContext.Provider
+            value={{color: '#0e76a8'}}> 
         <a
           href={userData.socialLinks.linkedin}
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
           <BsLinkedin />
         </a>
+      </IconContext.Provider>
+
+      <IconContext.Provider
+            value={{color: '#171515'}}> 
         <a
           href={userData.socialLinks.github}
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
           <BsGithub />
         </a>
+      </IconContext.Provider>
+
+      <IconContext.Provider
+            value={{color: '#00acee'}}>
         <a
           href={userData.socialLinks.hashnode}
           className="text-base font-normal text-gray-600 dark:text-gray-300"
         >
           <SiHashnode />
         </a>
+     </IconContext.Provider>
+
         <button
           aria-label="Toggle Dark Mode"
           type="button"
           className="w-10 h-10 p-3 rounded focus:outline-none"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
-          {mounted && (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              stroke="currentColor"
-              className="w-4 h-4 text-yellow-500 dark:text-yellow-500"
-            >
-              {theme === "dark" ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                />
-              )}
-            </svg>
-          )}
+          { theme === 'dark' ? 
+          (<IconContext.Provider value={{color: '#F4E99B', size: '25px'}}> 
+          <MdLightMode />
+          </IconContext.Provider>)         
+           : (
+            <IconContext.Provider value={{color: '#4c4f4f', size: '25px'}}> 
+           <MdDarkMode />
+           </IconContext.Provider>) }
         </button>
       </div>
     </div>
