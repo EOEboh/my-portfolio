@@ -72,15 +72,15 @@ const Hero = () => {
     </div>
 
   <div className='grid place-items-center'>
-    <button className="bg-transparent dark:text-gray-200 border border-black hover:border-transparent hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-2">
+    <button className="bg-gray-300 dark:text-gray-200 border hover:border-transparent hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-2">
     <a
-                  href="/files/myCV1.pdf"
+                  href="/files/myCVEngineering.pdf"
                   target="__blank"
                   rel="noopener noreferrer" 
                   download
                 >
    <MdDownload />
-  <span>My Resume/CV</span>
+  <span>Resume/CV</span>
   </a>
 </button>
     <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center text-5xl md:text-6xl my-4">
@@ -90,7 +90,7 @@ const Hero = () => {
                   rel="noopener noreferrer"
                 >
             <MdArticle />      
-  <span>My Blog</span>
+  <span>Blog</span>
   </a>
 </button>
 </div>
